@@ -17,11 +17,11 @@ $(document).ready(function(){
             name = row['name']
             description = row['description']
 
-            $('.result').append("<span>Name: " + name + "</span><br><span>Description: " + description + "</span")
+            $('.result').append("<span>Name: " + name + "</span><br><span>Description: " + description + "</span><br>")
           })
         }
         
-        $('.result').append("<span>Name: " + name + "</span><br><span>Description: " + description + "</span")
+        $('.result').append("<span>Name: " + name + "</span><br><span>Description: " + description + "</span><br><br>")
       }
     })
   })
