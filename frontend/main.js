@@ -5,7 +5,9 @@ $(document).ready(function(){
     $.ajax({
       url: "http://localhost:8070/api/" + number,
       success: function(data) {
-        data = JSON.parse(data)
+        if (typeof data != 'object') {
+          data = JSON.parse(data)
+        }
         let services = data['data']['bin']['services']
         let name = null
         let description = null
